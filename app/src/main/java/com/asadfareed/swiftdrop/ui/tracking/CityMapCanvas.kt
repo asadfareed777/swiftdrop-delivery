@@ -62,8 +62,8 @@ fun CityMapCanvas(
         val minY = focus.minOf { it.y } - 420 // extra headroom for pins under the status bar
         val maxY = focus.maxOf { it.y } + 260
         val scale = min(size.width / (maxX - minX), size.height / (maxY - minY)).toFloat()
-        val ox = (size.width - (maxX - minX) * scale) / 2f - minX.toFloat() * scale
-        val oy = (size.height - (maxY - minY) * scale) / 2f - minY.toFloat() * scale
+        val ox = (size.width - (maxX - minX).toFloat() * scale) / 2f - minX.toFloat() * scale
+        val oy = (size.height - (maxY - minY).toFloat() * scale) / 2f - minY.toFloat() * scale
         fun map(p: Point) = Offset(ox + p.x.toFloat() * scale, oy + p.y.toFloat() * scale)
         fun map(x: Float, y: Float) = Offset(ox + x * scale, oy + y * scale)
 
