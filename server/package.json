@@ -1,0 +1,14 @@
+{
+  "name": "swiftdrop-tracking-server",
+  "version": "1.0.0",
+  "description": "WebSocket server that streams live courier tracking for the Swiftdrop Android app",
+  "main": "tracking-server.js",
+  "scripts": {
+    "start": "node tracking-server.js",
+    "test": "node test.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "ws": "^8.18.0"
+  }
+}

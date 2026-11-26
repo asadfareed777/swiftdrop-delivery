@@ -1,0 +1,1 @@
+-keepclassmembers class com.asadfareed.swiftdrop.** { @kotlinx.serialization.Serializable *; }
